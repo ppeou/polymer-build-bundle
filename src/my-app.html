@@ -171,7 +171,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       _pageChanged(page) {
         // Load page import on demand. Show 404 page if fails
-        const resolvedPageUrl = this.resolveUrl('my-' + page + '.html');
+        const maps = {
+          view1: 'my-view1.html',
+          view2: 'my-view2.html',
+          view3: 'my-view3.html',
+        };
+        const resolvedPageUrl = this.resolveUrl(maps[page]);
         Polymer.importHref(
             resolvedPageUrl,
             null,

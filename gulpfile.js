@@ -19,7 +19,7 @@ const cacheBuster = () => {
                 'index.html',
                 'service-worker.js',
                 'manifest.json', /bower_components\/webcomponentsjs/],
-            dontUpdateReference: ['service-worker.js',
+            dontUpdateReference: ['index.html', 'service-worker.js',
                 'manifest.json', /bower_components\/webcomponentsjs/],
         }))
         .pipe(gulp.dest('./build/dist'))
