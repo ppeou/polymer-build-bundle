@@ -16,5 +16,9 @@
     "test": "polymer test",
     "test:integration": "polymer build # test that psk builds without error with the CLI",
     "build": "polymer build && gulp default"
+  },
+  "dependencies": {
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0"
   }
 }
